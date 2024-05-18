@@ -1,0 +1,2 @@
+py seperateString.py
+pause
