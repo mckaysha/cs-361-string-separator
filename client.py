@@ -21,7 +21,8 @@ def callServer():
     clientSocket.send(stringMessage.encode('utf-8'))
 
     # Take the raw data from the server and convert it back into a list
-    data = pickle.loads(clientSocket.recv(1024))
+    rawData = clientSocket.recv(1024)
+    data = pickle.loads(rawData)
 
     # Print the data and close the server
     print("Returned Data:")
