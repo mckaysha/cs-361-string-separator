@@ -36,3 +36,8 @@ Receiveing the split string from the microsevice requires the [pickle library](h
     # Pickle to convert raw data stream into a list
     returnedList = pickle.loads(rawData)
 ```
+
+The microservice will return "Empty Search" if there is only " " sent to it.
+
+
+![UML](./Assignment%208.png)
